@@ -4,17 +4,17 @@
 <head>
   <meta charset="utf-8">
   
-  <title>新聞樞紐</title>
+  <title>News Hub</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="全球銀行業AI動態新聞整理">
+  <meta name="description" content="A curated collection of news, insights, and research">
 <meta property="og:type" content="website">
-<meta property="og:title" content="新聞樞紐">
+<meta property="og:title" content="News Hub">
 <meta property="og:url" content="https://dahooobot.github.io/news/index.html">
-<meta property="og:site_name" content="新聞樞紐">
-<meta property="og:description" content="全球銀行業AI動態新聞整理">
-<meta property="og:locale" content="zh_TW">
+<meta property="og:site_name" content="News Hub">
+<meta property="og:description" content="A curated collection of news, insights, and research">
+<meta property="og:locale" content="en_US">
 <meta property="article:author" content="Wayne Xiaolong">
-<meta property="article:tag" content="bank, AI, 銀行, 人工智慧, 新聞">
+<meta property="article:tag" content="news, information, research, insights">
 <meta name="twitter:card" content="summary">
   
   
@@ -37,16 +37,10 @@
 
 <body>
   <div class="site-wrapper ">
-    <div id="loading-bar-wrapper">
-  <div id="loading-bar"></div>
-</div>
-<script>document.getElementById("loading-bar").style.width="20%";</script>
-
-
-<header id="header" class="site-header clearfix">
+    <header id="header" class="site-header clearfix">
 
   <a class="logo square clearfix" href="/news/">
-    <!-- 
+    <!--
       Replace with your own size name, for example:
       <span class="b">A</span>
       <span class="w">B</span>
@@ -66,6 +60,58 @@
 
 </header>
 
+<!-- Category Filter Buttons -->
+<div id="category-filter" class="category-filter">
+  <span class="filter-label">篩選：</span>
+  <button class="filter-btn" data-filter="AI-產業動態">🤖 AI</button>
+  <button class="filter-btn" data-filter="美股市場">📈 金融股市</button>
+  <button class="filter-btn" data-filter="科技產業">💻 科技</button>
+</div>
+
+<style>
+.category-filter {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 20px;
+  background: #f8f9fa;
+  border-bottom: 1px solid #eee;
+  flex-wrap: wrap;
+}
+
+.filter-label {
+  font-weight: 600;
+  color: #666;
+  font-size: 14px;
+}
+
+.filter-btn {
+  padding: 6px 14px;
+  border: 2px solid #ddd;
+  border-radius: 20px;
+  background: white;
+  cursor: pointer;
+  font-size: 13px;
+  transition: all 0.2s ease;
+  color: #333;
+}
+
+.filter-btn:hover {
+  border-color: #bbb;
+  background: #f0f0f0;
+}
+
+.filter-btn.active {
+  background: #333;
+  color: white;
+  border-color: #333;
+}
+
+.post-item.hidden {
+  display: none;
+}
+</style>
+
     <script>document.getElementById("loading-bar").style.width="40%";</script>
     <main id="main" class="clearfix">
       <div class="page-header">
@@ -75,120 +121,120 @@
 
 <ul class="post-list clearfix">
   
-    <li class="post-item grid-item">
-	<a class="post-link" href="/news/2026/07/26/bank-ai-news-2026-07-27/">
-		<h3 class="post-title">全球銀行AI動態整理（2026年7月27日）</h3>
+    <li class="post-item grid-item" data-categories="AI 產業動態">
+	<a class="post-link" href="/news/2026/08/10/2026-08-10-%E5%85%A8%E7%90%83%E9%8A%80%E8%A1%8CAI%E5%8B%95%E6%85%8B%E6%95%B4%E7%90%86/">
+		<h3 class="post-title">全球銀行 AI 動態整理（2026年8月10日）</h3>
 	  <div class="post-meta">
-	    <time datetime="2026-07-26T16:00:00.000Z" itemprop="datePublished">
-	      7.27.26
+	    <time datetime="2026-08-10T13:00:00.000Z" itemprop="datePublished">
+	      8.10.26
 	    </time>
 	  </div>
   </a>
 </li>
 
   
-    <li class="post-item grid-item">
-	<a class="post-link" href="/news/2026/07/25/bank-ai-news-2026-07-26/">
-		<h3 class="post-title">全球銀行AI動態整理（2026年7月26日）</h3>
+    <li class="post-item grid-item" data-categories="AI 產業動態">
+	<a class="post-link" href="/news/2026/05/30/2026-05-30-%E5%85%A8%E7%90%83%E9%8A%80%E8%A1%8CAI%E5%8B%95%E6%85%8B%E6%95%B4%E7%90%86/">
+		<h3 class="post-title">全球銀行 AI 動態整理（2026年5月30日）</h3>
 	  <div class="post-meta">
-	    <time datetime="2026-07-25T16:00:00.000Z" itemprop="datePublished">
-	      7.26.26
+	    <time datetime="2026-05-30T13:00:00.000Z" itemprop="datePublished">
+	      5.30.26
 	    </time>
 	  </div>
   </a>
 </li>
 
   
-    <li class="post-item grid-item">
-	<a class="post-link" href="/news/2026/07/24/bank-ai-news-2026-07-25/">
-		<h3 class="post-title">全球銀行AI動態整理（2026年7月25日）</h3>
+    <li class="post-item grid-item" data-categories="科技產業">
+	<a class="post-link" href="/news/2026/03/24/%E7%A7%91%E6%8A%80%E7%94%A2%E6%A5%AD%E5%8B%95%E6%85%8B%E6%95%B4%E7%90%86-2026%E5%B9%B43%E6%9C%88/">
+		<h3 class="post-title">科技產業動態整理（2026年3月）</h3>
 	  <div class="post-meta">
-	    <time datetime="2026-07-24T16:00:00.000Z" itemprop="datePublished">
-	      7.25.26
+	    <time datetime="2026-03-24T16:50:00.000Z" itemprop="datePublished">
+	      3.25.26
 	    </time>
 	  </div>
   </a>
 </li>
 
   
-    <li class="post-item grid-item">
-	<a class="post-link" href="/news/2026/07/24/bank-ai-news-2026-07-24/">
-		<h3 class="post-title">全球銀行AI動態整理（2026年7月24日）</h3>
+    <li class="post-item grid-item" data-categories="美股市場">
+	<a class="post-link" href="/news/2026/03/24/%E7%BE%8E%E8%82%A1%E9%87%8D%E9%BB%9E%E6%95%B4%E7%90%86-2026%E5%B9%B43%E6%9C%8824%E6%97%A5/">
+		<h3 class="post-title">美股重點整理（2026年3月24日）</h3>
 	  <div class="post-meta">
-	    <time datetime="2026-07-24T13:00:00.000Z" itemprop="datePublished">
-	      7.24.26
+	    <time datetime="2026-03-24T16:20:00.000Z" itemprop="datePublished">
+	      3.25.26
 	    </time>
 	  </div>
   </a>
 </li>
 
   
-    <li class="post-item grid-item">
-	<a class="post-link" href="/news/2026/07/22/bank-ai-news-2026-07-22/">
-		<h3 class="post-title">銀行AI新聞 2026年7月22日</h3>
+    <li class="post-item grid-item" data-categories="AI 產業動態">
+	<a class="post-link" href="/news/2026/03/24/2026-03-24-%E5%85%A8%E7%90%83%E9%8A%80%E8%A1%8CAI%E5%8B%95%E6%85%8B%E6%95%B4%E7%90%86/">
+		<h3 class="post-title">全球銀行 AI 動態整理（2026年3月24日）</h3>
 	  <div class="post-meta">
-	    <time datetime="2026-07-22T04:00:00.000Z" itemprop="datePublished">
-	      7.22.26
+	    <time datetime="2026-03-24T13:00:00.000Z" itemprop="datePublished">
+	      3.24.26
 	    </time>
 	  </div>
   </a>
 </li>
 
   
-    <li class="post-item grid-item">
-	<a class="post-link" href="/news/2026/07/21/bank-ai-news-2026-07-21/">
-		<h3 class="post-title">銀行AI新聞 2026年7月21日</h3>
+    <li class="post-item grid-item" data-categories="美股市場">
+	<a class="post-link" href="/news/2026/03/23/%E7%BE%8E%E8%82%A1%E9%87%8D%E9%BB%9E%E6%95%B4%E7%90%86-2026%E5%B9%B43%E6%9C%8823%E6%97%A5/">
+		<h3 class="post-title">美股重點整理（2026年3月23日）</h3>
 	  <div class="post-meta">
-	    <time datetime="2026-07-21T04:00:00.000Z" itemprop="datePublished">
-	      7.21.26
+	    <time datetime="2026-03-23T15:05:00.000Z" itemprop="datePublished">
+	      3.23.26
 	    </time>
 	  </div>
   </a>
 </li>
 
   
-    <li class="post-item grid-item">
-	<a class="post-link" href="/news/2026/07/20/bank-ai-news-2026-07-20/">
-		<h3 class="post-title">全球銀行AI動態整理（2026年7月20日）</h3>
+    <li class="post-item grid-item" data-categories="AI 產業動態">
+	<a class="post-link" href="/news/2026/03/23/2026-03-23-%E5%85%A8%E7%90%83%E9%8A%80%E8%A1%8CAI%E5%8B%95%E6%85%8B%E6%95%B4%E7%90%86/">
+		<h3 class="post-title">全球銀行 AI 動態整理（2026年3月23日）</h3>
 	  <div class="post-meta">
-	    <time datetime="2026-07-20T13:00:00.000Z" itemprop="datePublished">
-	      7.20.26
+	    <time datetime="2026-03-23T13:49:00.000Z" itemprop="datePublished">
+	      3.23.26
 	    </time>
 	  </div>
   </a>
 </li>
 
   
-    <li class="post-item grid-item">
-	<a class="post-link" href="/news/2026/07/18/bank-ai-news-2026-07-18/">
-		<h3 class="post-title">全球銀行AI動態整理（2026年7月18日）</h3>
+    <li class="post-item grid-item" data-categories="AI 產業動態">
+	<a class="post-link" href="/news/2026/03/23/%E4%BA%9E%E6%B4%B2%E9%8A%80%E8%A1%8CAI%E5%8B%95%E6%85%8B%E6%95%B4%E7%90%86/">
+		<h3 class="post-title">亞洲銀行 AI 動態整理（2026年3月）</h3>
 	  <div class="post-meta">
-	    <time datetime="2026-07-18T13:00:00.000Z" itemprop="datePublished">
-	      7.18.26
+	    <time datetime="2026-03-23T01:15:00.000Z" itemprop="datePublished">
+	      3.23.26
 	    </time>
 	  </div>
   </a>
 </li>
 
   
-    <li class="post-item grid-item">
-	<a class="post-link" href="/news/2026/07/16/bank-ai-news-2026-07-16/">
-		<h3 class="post-title">全球銀行AI動態整理（2026年7月16日）</h3>
+    <li class="post-item grid-item" data-categories="AI 產業動態">
+	<a class="post-link" href="/news/2026/03/23/%E6%AD%90%E6%B4%B2%E9%8A%80%E8%A1%8CAI%E5%8B%95%E6%85%8B%E6%95%B4%E7%90%86/">
+		<h3 class="post-title">歐洲銀行 AI 動態整理（2026年3月）</h3>
 	  <div class="post-meta">
-	    <time datetime="2026-07-16T13:00:00.000Z" itemprop="datePublished">
-	      7.16.26
+	    <time datetime="2026-03-23T01:00:00.000Z" itemprop="datePublished">
+	      3.23.26
 	    </time>
 	  </div>
   </a>
 </li>
 
   
-    <li class="post-item grid-item">
-	<a class="post-link" href="/news/2026/07/14/bank-ai-news-2026-07-14/">
-		<h3 class="post-title">全球銀行AI動態整理（2026年7月14日）</h3>
+    <li class="post-item grid-item" data-categories="AI 產業動態">
+	<a class="post-link" href="/news/2026/03/23/%E4%B8%AD%E5%9C%8B%E9%8A%80%E8%A1%8CAI%E5%8B%95%E6%85%8B%E6%95%B4%E7%90%86/">
+		<h3 class="post-title">中國銀行 AI 動態整理（2026年3月）</h3>
 	  <div class="post-meta">
-	    <time datetime="2026-07-14T13:00:00.000Z" itemprop="datePublished">
-	      7.14.26
+	    <time datetime="2026-03-23T00:45:00.000Z" itemprop="datePublished">
+	      3.23.26
 	    </time>
 	  </div>
   </a>
@@ -210,7 +256,7 @@
     
 <footer id="footer" class="clearfix">
 	
-  <div>&copy; <a href="https://dahooobot.github.io/news">新聞樞紐</a> Theme by <a href="http://artifact.me/" target="_blank">Art Chen</a>.</div>
+  <div>&copy; <a href="https://dahooobot.github.io/news">News Hub</a> Theme by <a href="http://artifact.me/" target="_blank">Art Chen</a>.</div>
   <div>Powered by <a target="_blank" href="https://hexo.io/" rel="external noopener">Hexo</a>.</div>
 </footer>
 
@@ -256,7 +302,7 @@
 	    </div>
 	    <div class="info">
 	      <span class="item desc">
-	        全球銀行業AI動態新聞整理
+	        A curated collection of news, insights, and research
 	      </span>
 	    </div>
 	  </div>
@@ -294,7 +340,50 @@
 
 </div>
 
-  <!-- Universal Search -->
+  <!-- Category Filter -->
+<script>
+(function() {
+  var filterBtns = document.querySelectorAll('.filter-btn');
+  var activeFilters = new Set();
+
+  filterBtns.forEach(function(btn) {
+    btn.addEventListener('click', function() {
+      var filter = btn.getAttribute('data-filter');
+
+      if (activeFilters.has(filter)) {
+        activeFilters.delete(filter);
+        btn.classList.remove('active');
+      } else {
+        activeFilters.add(filter);
+        btn.classList.add('active');
+      }
+
+      var allPosts = document.querySelectorAll('.post-item');
+      allPosts.forEach(function(post) {
+        var postCategories = post.getAttribute('data-categories') || '';
+
+        if (activeFilters.size === 0) {
+          post.classList.remove('hidden');
+        } else {
+          var hasMatch = false;
+          activeFilters.forEach(function(f) {
+            if (postCategories.indexOf(f) !== -1) {
+              hasMatch = true;
+            }
+          });
+          if (hasMatch) {
+            post.classList.remove('hidden');
+          } else {
+            post.classList.add('hidden');
+          }
+        }
+      });
+    });
+  });
+})();
+</script>
+
+<!-- Universal Search -->
 
 <script type="text/javascript">
   var GOOGLE_CUSTOM_SEARCH_API_KEY = "";
